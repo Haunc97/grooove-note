@@ -1,0 +1,91 @@
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading><div class="app-body"></div>
+<div class="form-group row">
+    <div class="col-md-3">
+        <button [routerLink]="['/notes/create']" type="button" class="btn btn-brand btn-sm btn-vine mr-1"
+            style="margin-bottom: 4px">
+            <i class="fa fa-plus-square-o"></i>
+            <span>Creating a new note</span>
+        </button>
+    </div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="input-group">
+            <span class="input-group-prepend">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+            </span>
+            <input [(ngModel)]="noteFilter.title" type="text" name="input1-group2" class="form-control"
+                placeholder="Search your note...">
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>No. </th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Created on</th>
+            <th class="text-center">In Progress</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of noteList | filterBy : noteFilter ; let i = index ">
+            <td>{{i+1}}</td>
+            <td>{{item.title}}</td>
+            <td><span [innerHTML] = "item.description"></span></td>
+            <td>{{item.createdOn | date}}</td>
+            <td class="text-center">
+                <label class="switch switch-sm switch-label switch-info">
+                    <input type="checkbox" class="switch-input" [checked]="item.finished===false" (click)="updateStatus(item)">
+                    <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+                </label>
+            </td>
+            <td class="text-center">
+                <button (click)="goToEditPage(item)" type="button" class="btn btn-brand btn-sm btn-instagram mr-1" style="margin-bottom: 4px">
+                    <i class="fa fa-edit"></i>
+                    <span>Edit</span>
+                </button>
+                <button data-toggle="modal" (click)="setCurrentNote(item)" (click)="dangerModal.show()" type="button"
+                    class="btn btn-brand btn-sm btn-google-plus mr-1" style="margin-bottom: 4px">
+                    <i class="fa fa-trash-o"></i>
+                    <span>Delete</span>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+    <li class="page-item active">
+        <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+
+
+<div bsModal #dangerModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-danger" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Delete</h4>
+                <button type="button" class="close" (click)="dangerModal.hide()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Do you want to delete <strong> {{currentNote.title}} </strong> note? &hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="dangerModal.hide()">Close</button>
+                <button (click)="onDeleteNote()" (click)="dangerModal.hide()" type="button" class="btn btn-danger">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

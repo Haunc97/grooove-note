@@ -1,0 +1,10 @@
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate">
+</ngx-loading>
+
+<div class="container">
+    <div class="row announce">
+        <h4 *ngIf="isConfirmed">Confirm email successfully. <a href="http://localhost:4200/#/account/login">Click
+                here</a>
+            to back login page</h4>
+    </div>
+</div>

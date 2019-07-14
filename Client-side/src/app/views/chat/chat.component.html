@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="messaging">
+        <div class="inbox_msg">
+            <div class="inbox_people">
+                <div class="headind_srch">
+                    <div class="recent_heading">
+                        <h4>Recent</h4>
+                    </div>
+                    <div class="srch_bar">
+                        <div class="stylish-input-group">
+                            <input type="text" class="search-bar" placeholder="Search">
+                            <span class="input-group-addon">
+                                <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                            </span> </div>
+                    </div>
+                </div>
+                <div class="inbox_chat">
+                    <div *ngFor="let contact of contactList" class="chat_list active_chat">
+                        <div class="chat_people" (click)="onChatWith(contact)">
+                            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                    alt="sunil"> </div>
+                            <div class="chat_ib">
+                                <h5>{{contact.userName}} <span class="chat_date">Dec 25</span></h5>
+                                <p>Test, which is a new approach to have all solutions
+                                    astrology under one roof.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="current-user">{{currentUser}}</div>
+            <div class="mesgs">
+                <div class="msg_history">
+                    <div *ngFor="let message of messageList"
+                        [ngClass]="{'incoming_msg':message.isIncoming===true,'outgoing_msg':message.isIncoming===false}">
+                        <div *ngIf="message.isIncoming===true" class="incoming_msg_img">
+                            <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+                        </div>
+                        <div [ngClass]="{'received_msg':message.isIncoming===true,'sent_msg':message.isIncoming===false}">
+                            <div [ngClass]="{'received_withd_msg':message.isIncoming===true}">
+                                <p class="sender" [ngStyle]="{'display':message.isIncoming === false ? 'none' : 'block' }">{{message.sender}}</p>
+                                <p>{{message.text}}</p>
+                                <span class="time_date"> 11:01 AM | June 9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="type_msg">
+                    <div class="input_msg_write">
+                        <input type="text" [(ngModel)]="message" class="write_msg" placeholder="Type a message" />
+                        <button class="msg_send_btn" (click)="onSendMessage()" type="button"><i
+                                class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="text-center top_spac"> Design by <a target="_blank" href="#">Sunil Rajput</a></p>
+
+    </div>
+</div>

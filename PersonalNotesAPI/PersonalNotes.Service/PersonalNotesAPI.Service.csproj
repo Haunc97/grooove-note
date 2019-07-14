@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalNotesAPI.Data\PersonalNotesAPI.Data.csproj" />
+    <ProjectReference Include="..\PersonalNotesAPI.Model\PersonalNotesAPI.Model.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,58 @@
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate">
+</ngx-loading>
+<div class="app-body"></div>
+<div class="card">
+    <div *ngIf="isLoadForm" class="card-body">
+        <form [formGroup]="AddNoteForm" (ngSubmit)="onAddNote()">
+            <div class="form-group">
+                <label class="form-col-form-label">Title: </label>
+                <input type="text" class="form-control" name="title" [formControl]="AddNoteForm.controls['title']"
+                    [(ngModel)]="note.title" placeholder="Enter note's title">
+                <div *ngIf="AddNoteForm.controls['title'].hasError('required') && AddNoteForm.controls['title'].dirty"
+                    class="custom-invalid-feedback">
+                    Title is required field.
+                </div>
+                <div *ngIf="AddNoteForm.controls['title'].hasError('maxlength') && AddNoteForm.controls['title'].dirty"
+                    class="custom-invalid-feedback">
+                    Tilte length can not more than 50. 
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-col-form-label">Description: </label>
+                <ckeditor [editor]="Editor" [formControl]="AddNoteForm.controls['description']"
+                    [(ngModel)]="note.description" name="description">
+                </ckeditor>
+                <div *ngIf="AddNoteForm.controls['description'].hasError('required') && AddNoteForm.controls['description'].dirty"
+                    class="custom-invalid-feedback">
+                    Description is required field.
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-4 col-md-4">
+                    <label for="ccyear">Notebook:</label>
+                    <select class="form-control" [formControl]="AddNoteForm.controls['notebookId']"
+                        [(ngModel)]="note.notebookId">
+                        <option value="0">--choose your notebook--</option>
+                        <option *ngFor="let item of notebookList" [value]="item.id">{{item.name}}</option>
+                    </select>
+                    <div *ngIf="AddNoteForm.controls['notebookId'].hasError('pattern') && AddNoteForm.controls['notebookId'].dirty"
+                        class="custom-invalid-feedback">
+                        Please Choosing a notebook.
+                    </div>
+                </div>
+                <div class="form-group col-sm-4 col-md-4">
+                    <label class="switch switch-label switch-outline-primary-alt">
+                        <label class="form-col-form-label">Finished </label>
+                        <input type="checkbox" class="switch-input" [formControl]="AddNoteForm.controls['finished']"
+                            [(ngModel)]="note.finished">
+                        <span class="switch-slider" data-checked="&#x2713;" data-unchecked="&#x2715;"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="float-right">
+                <button class="btn btn-danger" type="button">Reset</button>
+                <input type="submit" class="btn btn-info" [disabled]="!AddNoteForm.valid" value="Create" />
+            </div>
+        </form>
+    </div>
+</div>

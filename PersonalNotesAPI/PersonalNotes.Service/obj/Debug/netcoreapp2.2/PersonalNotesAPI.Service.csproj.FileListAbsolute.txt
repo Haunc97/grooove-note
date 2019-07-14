@@ -1,0 +1,42 @@
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Service.deps.json
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Service.dll
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Service.pdb
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Data.dll
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Model.dll
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Data.pdb
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Model.pdb
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.csprojAssemblyReference.cache
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.csproj.CoreCompileInputs.cache
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.AssemblyInfoInputs.cache
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.AssemblyInfo.cs
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.csproj.CopyComplete
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.dll
+C:\Users\intern05\Documents\assignments\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.pdb
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Service.deps.json
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Service.dll
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Service.pdb
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Data.dll
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Model.dll
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Data.pdb
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Model.pdb
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.csprojAssemblyReference.cache
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.csproj.CoreCompileInputs.cache
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.AssemblyInfoInputs.cache
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.AssemblyInfo.cs
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.csproj.CopyComplete
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.dll
+C:\Users\intern05\Desktop\Final assignment\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.pdb
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Service.deps.json
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Service.dll
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Service.pdb
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Data.dll
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Model.dll
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Data.pdb
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\bin\Debug\netcoreapp2.2\PersonalNotesAPI.Model.pdb
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.csprojAssemblyReference.cache
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.csproj.CoreCompileInputs.cache
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.AssemblyInfoInputs.cache
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.AssemblyInfo.cs
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.csproj.CopyComplete
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.dll
+E:\backend\sources\groovenote\PersonalNotesAPI\PersonalNotes.Service\obj\Debug\netcoreapp2.2\PersonalNotesAPI.Service.pdb
